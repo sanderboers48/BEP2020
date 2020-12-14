@@ -23,6 +23,9 @@ The PID controller is a subsystem, containing three separate PID blocks. This is
 ### Marine craft dynamics
 In this subsystem the equation of motion of the Delfia 1* is applied. The input is the control vector tau and the initial position of the boat. The output is eta, which consists of the x,y position and angle theta. Inside are different matrices and constants, that are being multiplied. Also two integrator blocks, which integrate the signal. First from acceleration to velocity and then to position.
 
+### Formation control
+Here all the adding and subtrating with posiitions and formation references are done. The output are the three error functions for the PID.
+
 ### Line-of-Sight (LOS)
 This function block has the LOS feature. Inside is the reference path specified. If an other reference path is needed, edit it here. The output is the desired position of the formation and the heading angle.
 
