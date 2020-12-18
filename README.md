@@ -14,7 +14,7 @@ A Table of contents is given of all the files included in this repository, with 
 |--------------------------------------|-----------------------------------------------------------------------------|
 | Control design                       |                                                                             |
 | delfiaFormationAssumptions           | The Formation control design for the Delfia model under assumptions.        |
-| delfiaFormationStatefeedback         | The Formation control design for the Delfia model with State-feedback.      |
+| delfiaFormationStateFeedback         | The Formation control design for the Delfia model with State-feedback.      |
 | delfiaFormationAssumptionsRobustness | The Formation control design with Robustness tests.                         |
 | singleVesselLineOfSight              | The control design for a single vessel with Line of sight implementation.   |
 |                                      |                                                                             |
@@ -24,13 +24,18 @@ A Table of contents is given of all the files included in this repository, with 
 | delfiaModelAssumptionsRobustness     | The Delfia model used by delfiaFormationAssumptionsRobustness.              |
 |                                      |                                                                             |
 | MATLAB Plotters                      |                                                                             |
-| singleVesselPlotter.m                | The MATLAB plotter for a single vessel.                                     |
-| formationPlotter.m                   | The MATLAB plotter for multiple vessels.                                    |
+| singleVesselPlotter.m                | The Main MATLAB plotter for a single vessel.                                |
+| formationPlotter.m                   | The Main MATLAB plotter for multiple vessels.                               |
+| PlottingDrift.m                      | The MATLAB plotter for the drift tests.                                     |
+| PlottingErrorLin.m                   | The MATLAB plotter for comparison State-feedback.                           |
+| PlottingErrorSymAsym.m               | The MATLAB plotter for comparison symmetric and asymmetric.                 |
+| PlottingZero.m                       | The MATLAB plotter for checking stuck at zero.                              |
 |                                      |                                                                             |
 | Subfunctions / Subsystems            |                                                                             |
 | distanceFromCenter                   | Subsystem to calculate distances between vessels and the virtual center.    |
-| PIDassumptions                       | Subsystem with the PID blocks tuned for the model under assumptions.        |
-| PIDstatefeedback                     | Subsystem with the PID blocks tuned for the model under assumptions.        |
+| PID                                  | Subsystem with the PID blocks tuned for the model under assumptions.        |
+| PIDSF                                | Subsystem with the PID blocks tuned for the model with state-feedback.      |
+| PIDtunermodel                        | Simulink model to tune PIDs                                                 |
 | plot_center.m                        | Subfunction to plot a triangle representing the virtual center.             |
 | plot_vehicle.m                       | Subfunction to plot a shape representing a vessel.                          |
 
