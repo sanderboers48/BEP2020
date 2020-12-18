@@ -10,22 +10,29 @@ Open the Simulink file and press RUN. The simulation data will be saved to `.mat
 
 # Contents
 A Table of contents is given of all the files included in this repository, with a description of what the use-case is.  
-|               Filename               | Description |
-|:------------------------------------:|-------------|
-| delfiaFormationAssumptions           |             |
-| delfiaFormationStatefeedback         |             |
-| delfiaFormationAssumptionsRobustness |             |
-| delfiaModelAssumptions               |             |
-| delfiaModelStatefeedback             |             |
-| delfiaModelAssumptionsRobustness     |             |
-| lineOfSightSingleVessel              |             |
-| distanceFromCenter                   |             |
-| PIDassumptions                       |             |
-| PIDstatefeedback                     |             |
-| plot_center.m                        |             |
-| plot_vehicle.m                       |             |
-| singleVesselPlotter.m                |             |
-| formationPlotter.m                   |             |
+| Filename                             | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| Control design                       |                                                                             |
+| delfiaFormationAssumptions           | The Formation control design for the Delfia model under assumptions.        |
+| delfiaFormationStatefeedback         | The Formation control design for the Delfia model with State-feedback.      |
+| delfiaFormationAssumptionsRobustness | The Formation control design with Robustness tests.                         |
+| singleVesselLineOfSight              | The control design for a single vessel with Line of sight implementation.   |
+|                                      |                                                                             |
+| Delfia models                        |                                                                             |
+| delfiaModelAssumptions               | The Delfia model used by delfiaFormationAssumptions.                        |
+| delfiaModelStatefeedback             | The Delfia model used by delfiaFormationStatefeedback.                      |
+| delfiaModelAssumptionsRobustness     | The Delfia model used by delfiaFormationAssumptionsRobustness.              |
+|                                      |                                                                             |
+| MATLAB Plotters                      |                                                                             |
+| singleVesselPlotter.m                | The MATLAB plotter for a single vessel.                                     |
+| formationPlotter.m                   | The MATLAB plotter for multiple vessels.                                    |
+|                                      |                                                                             |
+| Subfunctions / Subsystems            |                                                                             |
+| distanceFromCenter                   | Subsystem to calculate distances between vessels and the virtual center.    |
+| PIDassumptions                       | Subsystem with the PID blocks tuned for the model under assumptions.        |
+| PIDstatefeedback                     | Subsystem with the PID blocks tuned for the model under assumptions.        |
+| plot_center.m                        | Subfunction to plot a triangle representing the virtual center.             |
+| plot_vehicle.m                       | Subfunction to plot a shape representing a vessel.                          |
 
 # Explanation
 Here a short explanation is given about the Simulink blocks on what they do and how to edit them.  
